@@ -1,0 +1,164 @@
+/* Importa a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* Define estilos para o corpo do documento HTML */
+body {
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Define estilos para a área de cadastro */
+.area-cadastro {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Define estilos para o formulário de cadastro */
+.cadastro {
+  position: relative;
+  width: 100%;
+  max-width: 355px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  padding: 35px;
+  box-shadow: 3px 3px 10px 0px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Estilos para o container do logotipo */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para o logotipo */
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+/* Estilos para o formulário dentro do container de cadastro */
+.cadastro form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* Estilos para as etiquetas dos campos de entrada */
+label {
+  display: flex;
+  color: #000000;
+  font-size: 15px;
+  justify-content: start;
+  margin: 10px 0px 0px 2px;
+}
+
+.gpd-welcome {
+  text-align: center;
+}
+
+/* Estilos para os campos de entrada no formulário de cadastro */
+.cadastro input {
+  margin-top: 10px;
+  background-color: #dddddd;
+  padding-left: 10px;
+  color: #000000;
+  border: none;
+  height: 45px;
+  outline: none;
+  border-radius: 8px;
+}
+
+/* Estilos para os campos de entrada quando o cursor está sobre eles */
+#email:hover {
+  background-color: #ffffff;
+  transition: all 0.3s ease-out;
+}
+
+#senha:hover {
+  background-color: #ffffff;
+  transition: all 0.3s ease-out;
+}
+
+/* Estilos para as imagens dentro do formulário de cadastro */
+.cadastro img {
+  width: 70px;
+  height: auto;
+}
+
+/* Estilos para o texto de espaço reservado nos campos de entrada */
+input::placeholder {
+  color: #000000;
+  font-size: 14px;
+}
+
+/* Estilos para o botão de envio no formulário */
+form [type='submit'] {
+  display: block;
+  background-color: #5568fe;
+  color: #cbd0f7;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  margin-top: 15px;
+}
+
+/* Estilos para o botão de envio quando o cursor está sobre ele */
+form [type='submit']:hover {
+  color: #ffffff;
+  background-color: #6476ff;
+  transition: all 0.3s ease-out;
+}
+
+/* Estilos para parágrafos */
+p {
+  color: #000000;
+}
+
+/* Estilos para links */
+a {
+  color: #5568fe;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  margin-left: 2.5rem;
+  transition: all 0.3s ease-out;
+}
+
+/* Estilos para links quando o cursor está sobre eles */
+a:hover {
+  color: #7d8cff;
+}
+
+/* Estilos para telas pequenas (máximo de 768 pixels de largura) */
+@media (max-width: 768px) {
+  .cadastro {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .cadastro input {
+    height: 40px;
+  }
+}
+
+/* Estilos para telas muito pequenas (máximo de 480 pixels de largura) */
+@media (max-width: 480px) {
+  .cadastro {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .cadastro input {
+    height: 35px;
+  }
+}

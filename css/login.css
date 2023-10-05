@@ -1,0 +1,160 @@
+/* Importa a fonte 'Poppins' do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* Estilos para o corpo da página */
+body {
+  background-color: #1b1f27;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para a área de login */
+.area-login {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para o container de login */
+.login {
+  position: relative;
+  width: 100%;
+  max-width: 355px;
+  background-color: #262833;
+  border-radius: 10px;
+  padding: 35px;
+  box-shadow: 3px 3px 10px 0px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Estilos para o container do logotipo */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+/* Estilos para o formulário de login dentro do container de login */
+.login form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* Estilos para as etiquetas do formulário */
+label {
+  display: flex;
+  color: #ffffff;
+  font-size: 15px;
+  justify-content: start;
+  margin: 10px 0px 0px 2px;
+}
+
+.gpd-welcome {
+  text-align: center;
+}
+
+/* Estilos para as entradas do formulário de login */
+.login input {
+  margin-top: 10px;
+  background-color: #21222b;
+  padding-left: 10px;
+  color: #cbd0f7;
+  border: none;
+  height: 45px;
+  outline: none;
+  border-radius: 8px;
+}
+
+/* Estilos para os campos de entrada quando o cursor está sobre eles */
+#email:hover {
+  background-color: #2f313f;
+  transition: all 0.3s ease-out;
+}
+
+#senha:hover {
+  background-color: #2f313f;
+  transition: all 0.3s ease-out;
+}
+
+/* Estilos para as imagens dentro do formulário de login */
+.login img {
+  width: 70px;
+  height: auto;
+}
+
+/* Estilos para o texto de espaço reservado nos campos de entrada */
+input::placeholder {
+  color: #cbd0f7;
+  font-size: 14px;
+}
+
+/* Estilos para o botão de envio do formulário */
+form [type='submit'] {
+  display: block;
+  background-color: #5568fe;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  margin-top: 15px;
+}
+
+/* Estilos para o botão de envio quando o cursor está sobre ele */
+form [type='submit']:hover {
+  color: #ffffff;
+  background-color: #6476ff;
+  transition: all 0.3s ease-out;
+}
+
+/* Estilos para parágrafos */
+p {
+  color: #cbd0f7;
+}
+/* Estilos para os links na página */
+a {
+  color: #5568fe;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  margin-left: 0.5rem;
+}
+
+/* Estilos para links quando o cursor está sobre eles */
+a:hover {
+  color: #7d8cff;
+}
+
+/* Estilos responsivos para telas menores que 768px */
+@media (max-width: 768px) {
+  .login {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .login input {
+    height: 40px;
+  }
+}
+
+/* Estilos responsivos para telas menores que 480px */
+@media (max-width: 480px) {
+  .login {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .login input {
+    height: 35px;
+  }
+}

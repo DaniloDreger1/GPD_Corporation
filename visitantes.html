@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de clientes</title>
+    <!-- Adicione o CSS do Bootstrap e do Material Design Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <!-- Adicione as Fontes do Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Adicione o Favicon -->
+    <link
+      rel="icon"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      type="image/png"
+    />
+    <!-- Adicione o CSS local -->
+    <link rel="stylesheet" href="css/visitantes.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Barra de navegação -->
+      <nav class="navbar navbar-expand-lg bg-body-primary navbar1-color">
+        <div class="container-fluid">
+          <a href="visitantes.html" class="navbar-brand">
+            <img
+              src="img/bancos-de-dados.png"
+              alt="Dados"
+              width="50"
+              height="50"
+              class="d-inline-block align-top"
+            />
+          </a>
+          <h4 class="text-white">GPD Corporation</h4>
+
+          <button type="button" class="btn btn-clean" onclick="sair()">
+            Sair
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <!-- Formulário de cadastro de visitantes -->
+      <h1 class="mt-4 another-font text-center">Cadastro de Visitantes</h1>
+      <form class="text-left">
+        <div class="row">
+          <!-- Campos do formulário -->
+          <div class="form-group col-md-6">
+            <label class="label" for="nome">Nome</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nome"
+              placeholder="Informe seu nome"
+              required
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label class="label" for="cpf">CPF</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cpf"
+              placeholder="123.456.789-00"
+              required
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label class="label" for="idade">Idade</label>
+            <input
+              type="number"
+              class="form-control"
+              id="idade"
+              placeholder="Informe sua idade"
+              required
+            />
+          </div>
+          <!-- Campo tipo data-->
+          <div class="form-group col-md-6">
+            <label class="label" for="birth">Data de Nascimento</label>
+            <input type="date" class="form-control" id="birth" required />
+          </div>
+          <!-- Campo texto -->
+          <div class="form-group col-md-12">
+            <label class="label" for="observacao">Observações</label>
+            <textarea class="form-control" id="observacao" rows="3"></textarea>
+          </div>
+          <!-- Campos radio -->
+          <div id="gender" class="form-check col-md-12">
+            <label class="label" for="gender">Gênero</label><br />
+            <input
+              type="radio"
+              id="masculino"
+              name="sexo"
+              value="Masculino"
+              checked
+            />
+            <label class="label mr-5" for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="sexo" value="Feminino" />
+            <label class="label" for="feminino">Feminino</label> <br />
+          </div>
+          <!-- Campo checkbox-->
+          <div class="form-check col-md-12">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="termo"
+              required
+            />
+            <label class="label" for="termo" class="form-check-label"
+              >Aceito a utilização dos meus dados</label
+            >
+          </div>
+        </div>
+        <!-- Botões do formulário -->
+        <button
+          type="submit"
+          class="btn"
+          onclick="salvarVisitante()"
+          id="cadastrar"
+        >
+          Cadastrar
+        </button>
+        <button type="reset" class="btn btn-light another-color">Limpar</button>
+      </form>
+      <!-- Lista de visitantes cadastrados -->
+      <h2 class="mt-4 text-white">Visitantes Cadastrados</h2>
+      <div id="listagem"></div>
+    </div>
+
+    <!--JavaScript do Bootstrap e do Material Design Bootstrap -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"
+    ></script>
+    <!-- JavaScript local -->
+
+    <script type="text/javascript" src="js/visitantes.js"></script>
+  </body>
+</html>
