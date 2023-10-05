@@ -29,7 +29,7 @@ function entrar() {
   if (userValid) {
     // Se encontrado, exibe uma mensagem de boas-vindas e redireciona para a página 'visitantes.html'
     alert('Bem vindo')
-    window.location.href = 'visitantes.html'
+    window.location.href = 'home.html'
   } else {
     // Se não encontrado, exibe uma mensagem de erro, limpa os campos de email e senha
     alert('E-mail ou senha incorretos')

@@ -1,6 +1,6 @@
 // Função para redirecionar o usuário para a página de login
 function sair() {
-  window.location.href = 'login.html'
+  window.location.href = 'index.html'
 }
 
 /**

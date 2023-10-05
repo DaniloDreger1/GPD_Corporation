@@ -60,7 +60,7 @@ function cadastrar() {
     alert('Usuário cadastrado\nSeja Bem-vindo(a)')
 
     setTimeout(() => {
-      window.location.href = 'login.html'
+      window.location.href = 'index.html'
     }, 500)
   } else {
     // Se o email ou a senha não forem válidos, exibe uma mensagem de erro
